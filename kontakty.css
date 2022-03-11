@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content-wrap {
+    width: 1200;
+    margin: 0px auto;
+    padding: 0;    
+}
+
+body {
+    margin: 0;
+    font-family: 'Courgette', cursive;
+    font-size: 16px;
+    background-color: rgba(161, 78, 22, 0.76);
+}
+
+@media screen and (min-width: 1080px){
+    .menu_pozadi {
+        border-top: 15px solid rgb(253, 201, 133);
+        border-bottom: 15px solid rgb(253, 201, 133);
+        background-color: white;
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    .menu {
+        display: flex;
+        float: right;
+        margin-top: 10px;
+        font-family: Chaparral Pro;
+    }
+
+    .menu ul li a {
+        display: inline-block;
+        padding: 10px;
+        color: black;
+        border: 2px solid rgb(230, 227, 227);
+        border-radius: 15px;
+        margin: 10px;
+        text-decoration: none;
+    }
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .menu ul li {
+        display: inline-block;
+    }
+
+    .menu a:hover {
+        background-color: rgb(230, 227, 227);
+    }
+
+    .logo {
+        margin-bottom: -2px;
+    }
+/*-------section1------*/
+    .uvodni_text {
+        text-align: center;
+        border: 8px solid rgb(230, 227, 227);
+        padding: 40px;
+        background-color: white;
+    }
+
+    .uvodni_text h1{
+        font-size: 45px;
+        color: rgb(107, 63, 27);
+    }
+    .uvodni_text p {
+        font-size: 25px;
+        color: rgb(253, 201, 133);
+ }
+/*-------section2------*/
+    .section2 {
+        background: url();
+        background-color: rgb(253, 201, 133);
+        width: 80%;
+        margin: 0 10%;
+        border-radius: 30px 30px 0 0;
+        border: 5px solid rgb(230, 227, 227);
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo_dole {
+        margin: 12px 44%;   
+        width: 12%;
+        height: auto;
+    }
+
+    .s2_text h1{
+        margin: 20px auto 35px auto;
+        font-size: 40px;
+        text-align: center;
+        color: rgb(107, 63, 27);
+    }
+
+    .sloupec_text {
+        margin-bottom: 30px;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        background-color: rgb(107, 63, 27);
+        
+        border-top: 5px solid rgb(230, 227, 227);
+        border-bottom: 5px solid rgb(230, 227, 227);
+
+    }
+
+    .text_kontakt1, .text_kontakt2, .text_kontakt3 {
+        text-align: center;
+        color: rgb(253, 201, 133);
+    }
+
+    .text_kontakt1 h2, .text_kontakt2 h2, .text_kontakt3 h2 {
+        font-size: 30px;
+    }
+
+    .text_kontakt1 p, .text_kontakt2 p, .text_kontakt3 p {
+        font-size: 20px;
+    }
+
+    .mapa {
+        width: 100%;
+        height: auto;
+        border-top: 5px solid rgb(230, 227, 227);
+
+
+    }
+/*-----pata------*/
+    .pata {
+        height: 250px;
+        border-bottom: 15px solid rgb(253, 201, 133);
+        border-top: 15px solid rgb(253, 201, 133);
+        background-color: rgb(235, 235, 235);
+        margin-top: 60px;
+    }
+
+    .cukrarna_pata {
+        text-align: center;
+        margin: 30px;
+        
+    }
+
+    .pata_h1 {
+        font-size: 60px;
+        color: rgb(107, 63, 27);
+    }
+
+    .pata_p {
+        color: rgb(253, 201, 133);
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 1080px){
+    .menu_pozadi {
+        border-top: 15px solid rgb(253, 201, 133);
+        border-bottom: 15px solid rgb(253, 201, 133);
+        background-color: white;
+        padding-left: 1%;
+        padding-right: 1%;
+
+    }
+
+    .menu {
+        display: flex;
+        float: right;
+        margin-top: 10px;
+        font-family: Chaparral Pro;
+        font-size: 13px;
+    }
+
+    .menu ul li a {
+        display: inline-block;
+        padding: 10px;
+        color: black;
+        border: 2px solid rgb(230, 227, 227);
+        border-radius: 15px;
+        margin: 8px;
+        text-decoration: none;
+    }
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .menu ul li {
+        display: inline-block;
+    }
+
+    .menu a:hover {
+        background-color: rgb(230, 227, 227);
+    }
+
+    .logo {
+        margin-bottom: -2px;
+    }
+/*-------section1------*/
+    .uvodni_text {
+        text-align: center;
+        border: 8px solid rgb(230, 227, 227);
+        padding: 40px;
+        background-color: white;
+    }
+
+    .uvodni_text h1{
+        font-size: 45px;
+        color: rgb(107, 63, 27);
+    }
+    .uvodni_text p {
+        font-size: 25px;
+        color: rgb(253, 201, 133);
+ }
+/*-------section2------*/
+    .section2 {
+        background-color: rgb(253, 201, 133);
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 30px 30px 0 0;
+        border: 5px solid rgb(230, 227, 227);
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo_dole {
+        margin: 12px 37%;   
+        width: 26%;
+        height: auto;
+    }
+
+    .s2_text h1{
+        margin: 20px auto 35px auto;
+        font-size: 40px;
+        text-align: center;
+        color: rgb(107, 63, 27);
+    }
+
+    .sloupec_text {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        background-color: rgb(107, 63, 27);
+        padding: 30px 0;
+        border-top: 5px solid rgb(230, 227, 227);
+        border-bottom: 5px solid rgb(230, 227, 227);
+        flex-wrap: wrap;
+
+    }
+
+    .text_kontakt1, .text_kontakt2, .text_kontakt3 {
+        text-align: center;
+        color: rgb(253, 201, 133);
+        min-width: 200px;
+        margin-bottom: 30px;
+    }
+
+    .text_kontakt1 h2, .text_kontakt2 h2, .text_kontakt3 h2 {
+        font-size: 30px;
+    }
+
+    .text_kontakt1 p, .text_kontakt2 p, .text_kontakt3 p {
+        font-size: 20px;
+    }
+
+    .mapa {
+        width: 100%;
+        height: auto;
+        border-top: 5px solid rgb(230, 227, 227);
+
+
+    }
+/*-----pata------*/
+    .pata {
+        height: 250px;
+        border-bottom: 15px solid rgb(253, 201, 133);
+        border-top: 15px solid rgb(253, 201, 133);
+        background-color: rgb(235, 235, 235);
+        margin-top: 60px;
+    }
+
+    .cukrarna_pata {
+        text-align: center;
+        margin: 30px;
+        
+    }
+
+    .pata_h1 {
+        font-size: 60px;
+        color: rgb(107, 63, 27);
+    }
+
+    .pata_p {
+        color: rgb(253, 201, 133);
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 540px){
+    .menu_pozadi {
+        border-top: 15px solid rgb(253, 201, 133);
+        border-bottom: 15px solid rgb(253, 201, 133);
+        background-color: white;
+        padding-left: 1%;
+        padding-right: 1%;
+
+    }
+
+    .menu {
+        display: flex;
+        float: right;
+        margin-top: 15px;
+        font-family: Chaparral Pro;
+        font-size: 15px;
+    }
+
+    .menu ul li a {
+        display: inline-block;
+        padding: 5px;
+        color: black;
+        border: 2px solid rgb(230, 227, 227);
+        border-radius: 15px;
+        margin: 3px;
+        text-decoration: none;
+    }
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .menu ul li {
+        display: inline-block;
+    }
+
+    .menu a:hover {
+        background-color: rgb(230, 227, 227);
+    }
+
+    .logo {
+        margin-bottom: -2px;
+    }
+/*-------section1------*/
+    .uvodni_text {
+        text-align: center;
+        border: 8px solid rgb(230, 227, 227);
+        padding: 40px;
+        background-color: white;
+    }
+
+    .uvodni_text h1{
+        font-size: 45px;
+        color: rgb(107, 63, 27);
+    }
+    .uvodni_text p {
+        font-size: 25px;
+        color: rgb(253, 201, 133);
+ }
+/*-------section2------*/
+    .section2 {
+        background-color: rgb(253, 201, 133);
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 30px 30px 0 0;
+        border: 5px solid rgb(230, 227, 227);
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo_dole {
+        margin: 12px 32%;   
+        width: 36%;
+        height: auto;
+    }
+
+    .s2_text h1{
+        margin: 20px auto 35px auto;
+        font-size: 40px;
+        text-align: center;
+        color: rgb(107, 63, 27);
+    }
+
+    .sloupec_text {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        background-color: rgb(107, 63, 27);
+        padding: 30px 0;
+        border-top: 5px solid rgb(230, 227, 227);
+        border-bottom: 5px solid rgb(230, 227, 227);
+        flex-wrap: wrap;
+
+    }
+
+    .text_kontakt1, .text_kontakt2, .text_kontakt3 {
+        text-align: center;
+        color: rgb(253, 201, 133);
+        min-width: 200px;
+        margin-bottom: 30px;
+    }
+
+    .text_kontakt1 h2, .text_kontakt2 h2, .text_kontakt3 h2 {
+        font-size: 30px;
+    }
+
+    .text_kontakt1 p, .text_kontakt2 p, .text_kontakt3 p {
+        font-size: 20px;
+    }
+
+    .mapa {
+        width: 100%;
+        height: auto;
+        border-top: 5px solid rgb(230, 227, 227);
+
+
+    }
+/*-----pata------*/
+    .pata {
+        height: auto;
+        border-bottom: 15px solid rgb(253, 201, 133);
+        border-top: 15px solid rgb(253, 201, 133);
+        background-color: rgb(235, 235, 235);
+        margin-top: 60px;
+    }
+
+    .cukrarna_pata {
+        text-align: center;
+        margin: 30px;
+        
+    }
+
+    .pata_h1 {
+        font-size: 60px;
+        color: rgb(107, 63, 27);
+    }
+
+    .pata_p {
+        color: rgb(253, 201, 133);
+        font-size: 25px;
+    }
+
+}

@@ -1,0 +1,767 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content-wrap {
+    width: 1200;
+    margin: 0px auto;
+    padding: 0;    
+}
+
+body {
+    margin: 0;
+    font-family: 'Courgette', cursive;
+    font-size: 16px;
+    background-color: rgba(161, 78, 22, 0.76);
+}
+
+@media screen and (min-width: 1080px) {
+    .menu_pozadi {
+        border-top: 15px solid rgb(253, 201, 133);
+        border-bottom: 15px solid rgb(253, 201, 133);
+        background-color: white;
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    .menu {
+        display: flex;
+        float: right;
+        margin-top: 10px;
+        font-family: Chaparral Pro;
+    }
+
+    .menu ul li a {
+        display: inline-block;
+        padding: 10px;
+        color: black;
+        border: 2px solid rgb(230, 227, 227);
+        border-radius: 15px;
+        margin: 10px;
+        text-decoration: none;
+    }
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .menu ul li {
+        display: inline-block;
+    }
+
+    .menu a:hover {
+        background-color: rgb(230, 227, 227);
+    }
+
+    .logo {
+        margin-bottom: -2px;
+    }
+
+    /*---section1---*/
+    .uvodni_text {
+        text-align: center;
+        border: 8px solid rgb(230, 227, 227);
+        padding: 40px;
+        background-color: white;
+    }
+
+    .uvodni_text h1{
+        font-size: 45px;
+        color: rgb(107, 63, 27);
+    }
+     .uvodni_text p {
+        font-size: 25px;
+        color: rgb(253, 201, 133);
+     }
+     /*---selection2---*/
+    .section2_uvodni_text {
+        text-align: center;
+        margin: 50px;
+        border: 5px solid rgb(230, 227, 227);
+        border-radius: 30%;
+        padding: 10px;
+        margin-left: 20%;
+        margin-right: 20%;
+        width: auto;
+    }
+
+    .section2_uvodni_text h1 {
+        font-size: 40px;
+        color: rgb(107, 63, 27);
+    }
+
+    .section2_uvodni_text p {
+        font-size: 25px;
+        color: rgb(253, 201, 133);
+    }
+
+   .section2_nabidka {
+    position: relative;
+        display: flex;
+        justify-content: center;
+        margin-left: 8%;
+        margin-right: 8%;
+}
+
+
+
+.smerovac1, .smerovac2, .smerovac3, .smerovac4 {
+    max-width: 300px;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid black;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.section2_img1, .section2_img2, .section2_img3, .section2_img4{
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+    border-radius: 30px 30px 0 0;
+}
+
+.section2_img1_descript, .section2_img2_descript, .section2_img3_descript, .section2_img4_descript{
+    padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  transition: transform 0.5s;
+}
+
+.smerovac1:hover .section2_img1_descript, .smerovac2:hover .section2_img2_descript, .smerovac3:hover .section2_img3_descript, .smerovac4:hover .section2_img4_descript{
+    display: block;
+    transform: translateY(-100%);
+}
+
+.smerovac1:hover .section2_img1, .smerovac2:hover .section2_img2, .smerovac3:hover .section2_img3, .smerovac4:hover .section2_img4 {
+    transform: scale(1.1);
+}
+
+.text_odkaz {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+
+    .objednat_pruh {
+        margin-top: 50px;
+        border: 2px solid black;
+        justify-content: center;
+        padding: 30px ;
+        background-color: rgb(253, 201, 133);
+    }
+
+    .objednat_pruh_zarovnani {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+
+    .objednat_pruh_zarovnani p, .objednat_pruh_zarovnani a {
+        border: 2px solid black;
+        border: none;
+        font-size: 30px;
+        text-decoration: none;
+        color: rgb(107, 63, 27);
+    }
+    
+    .objednat_pruh_zarovnani a {
+        border-radius: 15px;
+        border: 2px solid black;
+        padding: 10px 20px;
+        background-color: rgba(161, 78, 22, 0.76);
+    }
+    
+    .objednat_pruh_zarovnani a:hover {
+        background-color: rgb(253, 201, 133);
+    }
+    /*---section3---*/
+    .seznam_jidla {
+        margin: 30px 10%;
+        background-color: white;
+        border-radius: 30px;
+        border: 8px solid rgb(230, 227, 227);
+
+    }
+    
+    .nase_dorty {
+        display: flex;
+        justify-content: space-between;
+        margin: 2% 10%;
+        text-align: center;
+        margin-bottom: 80px;   
+    }
+    
+    .vyber_jidlo1, .vyber_jidlo2 {
+        border: 2px solid black;
+        margin: 0 10px;
+        background-color: white;
+        border-radius: 30px;
+        width: 400px;
+        height: auto; 
+        font-size: 20px;
+        overflow: hidden;
+        box-shadow: 10px 10px 15px grey;
+    }
+    .vyber_jidlo1 h3, .vyber_jidlo2 h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .seznam_jidla h1 {
+        text-align: center;
+        font-size: 40px;
+        color: rgba(161, 78, 22, 0.76);
+        background-color: rgb(253, 201, 133);
+        border-radius: 20px;
+        border: 5px solid rgb(230, 227, 227);
+    }
+
+    .seznam_dort {
+        border-radius: 30px 30px 0 0;
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .vyber_jidlo1:hover .seznam_dort, .vyber_jidlo2:hover .seznam_dort{
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
+
+    .vyber_jidlo h2 {
+        padding-bottom: 20px;
+    }
+    
+
+
+     /*---pata---*/
+    
+    .pata { 
+        height: 250px;
+        border-bottom: 15px solid rgb(253, 201, 133);
+        border-top: 15px solid rgb(253, 201, 133);
+        background-color: rgb(235, 235, 235);
+        margin-top: 60px;
+    }
+    
+    .cukrarna_pata {
+        text-align: center;
+        margin: 30px;
+        
+    }
+    
+    .pata_h1 {
+        font-size: 40px;
+        color: rgb(107, 63, 27);
+    }
+    
+    .pata_p {
+        color: rgb(253, 201, 133);
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .menu_pozadi {
+        border-top: 15px solid rgb(253, 201, 133);
+        border-bottom: 15px solid rgb(253, 201, 133);
+        background-color: white;
+        padding-left: 1%;
+        padding-right: 1%;
+
+    }
+
+    .menu {
+        display: flex;
+        float: right;
+        margin-top: 10px;
+        font-family: Chaparral Pro;
+        font-size: 13px;
+    }
+
+    .menu ul li a {
+        display: inline-block;
+        padding: 10px;
+        color: black;
+        border: 2px solid rgb(230, 227, 227);
+        border-radius: 15px;
+        margin: 8px;
+        text-decoration: none;
+    }
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .menu ul li {
+        display: inline-block;
+    }
+
+    .menu a:hover {
+        background-color: rgb(230, 227, 227);
+    }
+
+    .logo {
+        margin-bottom: -2px;
+    }
+
+    /*---section1---*/
+    .uvodni_text {
+        text-align: center;
+        border: 8px solid rgb(230, 227, 227);
+        padding: 40px;
+        background-color: white;
+    }
+
+    .uvodni_text h1{
+        font-size: 45px;
+        color: rgb(107, 63, 27);
+    }
+     .uvodni_text p {
+        font-size: 25px;
+        color: rgb(253, 201, 133);
+     }
+     /*---selection2---*/
+    .section2_uvodni_text {
+        text-align: center;
+        margin: 50px;
+        border: 5px solid rgb(230, 227, 227);
+        border-radius: 30%;
+        padding: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: auto;
+    }
+
+    .section2_uvodni_text h1 {
+        font-size: 40px;
+        color: rgb(107, 63, 27);
+    }
+
+    .section2_uvodni_text p {
+        font-size: 25px;
+        color: rgb(253, 201, 133);
+    }
+
+    .section2_nabidka {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .smerovac1, .smerovac2, .smerovac3, .smerovac4 {
+        width: 40%;
+        height: auto;
+    }
+
+    .section2_dort, .section2_zakusek, .section2_cupcake, .section2_minidezert {
+        border: 2px solid black;
+        background-color: white;
+        border-radius: 40px;
+        margin: 2%;
+        padding-bottom: 25px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .section2_dort a, .section2_zakusek a, .section2_cupcake a, .section2_minidezert a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .section2_img1, .section2_img2, .section2_img3, .section2_img4 {
+        border-radius: 40px 40px 0 0;
+        max-width: 100%;
+        min-width: 100%;
+        width: auto;
+        height: auto;
+    } 
+
+    .objednat_pruh {
+        margin-top: 50px;
+        border: 2px solid black;
+        padding: 30px ;
+        background-color: rgb(253, 201, 133);
+    }
+
+    .objednat_pruh_zarovnani {      
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .objednat_pruh_zarovnani a {
+        margin: 0 0 0 30px;
+        color: rgb(107, 63, 27);
+        text-decoration: none;
+        font-size: 30px;
+        
+    }
+
+
+    .objednat_pruh_zarovnani p {
+        border: 2px solid black;
+        border: none;
+        font-size: 30px;
+        width: auto;
+        text-decoration: none;
+        color: rgb(107, 63, 27);
+        width: max-content;
+    }
+    
+    .objednat_pruh_zarovnani a {
+        border-radius: 15px;
+        border: 2px solid black;
+        padding: 10px 20px;
+        background-color: rgba(161, 78, 22, 0.76);
+    }
+    
+    .objednat_pruh_zarovnani a:hover {
+        background-color: rgb(253, 201, 133);
+    }
+    /*---section3---*/
+    .seznam_jidla {
+        margin: 0px 10%;
+        background-color: white;
+        border-radius: 30px;
+        border: 8px solid rgb(230, 227, 227);
+        height: auto;
+
+    }
+    
+    .nase_dorty {
+        display: flex;
+        align-content: space-between;
+        margin: 2% 0%;
+        text-align: center;
+        margin-bottom: 80px;
+        flex-wrap: wrap;
+        justify-content: center;  
+    }
+    
+    .vyber_jidlo1 ,.vyber_jidlo2 {
+        border: 2px solid black;
+        background-color: white;
+        border-radius: 30px;
+        width: 40%;
+        height: auto; 
+        font-size: 20px;
+        align-self: auto;
+        margin: 3%;
+        overflow: hidden;
+        box-shadow: 10px 10px 15px grey;
+
+    }
+
+    .seznam_jidla h1 {
+        text-align: center;
+        font-size: 40px;
+        color: rgba(161, 78, 22, 0.76);
+        background-color: rgb(253, 201, 133);
+        border-radius: 20px;
+        border: 5px solid rgb(230, 227, 227);
+    }
+
+    .seznam_dort {
+        border-radius: 30px 30px 0 0;
+        width: 100%;
+        max-height: 3000px;
+        min-height: 10px;
+    }
+
+    .vyber_jidlo1 h2 ,.vyber_jidlo2 h2 {
+        padding-bottom: 20px;
+        margin-top: 10px;
+    }
+    
+    .vyber_jidlo1:hover .seznam_dort, .vyber_jidlo2:hover .seznam_dort{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    
+
+
+     /*---pata---*/
+    
+    .pata { 
+        height: 250px;
+        border-bottom: 15px solid rgb(253, 201, 133);
+        border-top: 15px solid rgb(253, 201, 133);
+        background-color: rgb(235, 235, 235);
+        margin-top: 60px;
+    }
+    
+    .cukrarna_pata {
+        text-align: center;
+        margin: 30px;
+        
+    }
+    
+    .pata_h1 {
+        font-size: 40px;
+        color: rgb(107, 63, 27);
+    }
+    
+    .pata_p {
+        color: rgb(253, 201, 133);
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .menu_pozadi {
+        border-top: 15px solid rgb(253, 201, 133);
+        border-bottom: 15px solid rgb(253, 201, 133);
+        background-color: white;
+        padding-left: 1%;
+        padding-right: 1%;
+
+    }
+
+    .menu {
+        display: flex;
+        float: right;
+        margin-top: 15px;
+        font-family: Chaparral Pro;
+        font-size: 15px;
+    }
+
+    .menu ul li a {
+        display: inline-block;
+        padding: 5px;
+        color: black;
+        border: 2px solid rgb(230, 227, 227);
+        border-radius: 15px;
+        margin: 3px;
+        text-decoration: none;
+    }
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .menu ul li {
+        display: inline-block;
+    }
+
+    .menu a:hover {
+        background-color: rgb(230, 227, 227);
+    }
+
+    .logo {
+        margin-bottom: -2px;
+    }
+
+    /*---section1---*/
+    .uvodni_text {
+        text-align: center;
+        border: 8px solid rgb(230, 227, 227);
+        padding: 40px;
+        background-color: white;
+    }
+
+    .uvodni_text h1{
+        font-size: 45px;
+        color: rgb(107, 63, 27);
+    }
+     .uvodni_text p {
+        font-size: 25px;
+        color: rgb(253, 201, 133);
+     }
+     /*---selection2---*/
+    .section2_uvodni_text {
+        text-align: center;
+        margin: 50px;
+        border: 5px solid rgb(230, 227, 227);
+        border-radius: 30%;
+        padding: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: auto;
+    }
+
+    .section2_uvodni_text h1 {
+        font-size: 40px;
+        color: rgb(107, 63, 27);
+    }
+
+    .section2_uvodni_text p {
+        font-size: 25px;
+        color: rgb(253, 201, 133);
+    }
+
+    .section2_nabidka {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .smerovac1, .smerovac2, .smerovac3, .smerovac4 {
+        width: 40%;
+        height: auto;
+    }
+
+    .section2_dort, .section2_zakusek, .section2_cupcake, .section2_minidezert {
+        border: 2px solid black;
+        background-color: white;
+        border-radius: 40px;
+        margin: 2%;
+        padding-bottom: 25px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .section2_dort a, .section2_zakusek a, .section2_cupcake a, .section2_minidezert a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .section2_img1, .section2_img2, .section2_img3, .section2_img4 {
+        border-radius: 40px 40px 0 0;
+        max-width: 100%;
+        min-width: 100%;
+        width: auto;
+        height: auto;
+    } 
+
+    .objednat_pruh {
+        margin-top: 50px;
+        border: 2px solid black;
+        padding: 30px ;
+        background-color: rgb(253, 201, 133);
+    }
+
+    .objednat_pruh_zarovnani {      
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .objednat_pruh_zarovnani a {
+        margin: 0 0 0 30px;
+        color: rgb(107, 63, 27);
+        text-decoration: none;
+    }
+
+
+    .objednat_pruh_zarovnani p {
+        border: 2px solid black;
+        border: none;
+        font-size: 30px;
+        width: auto;
+        text-decoration: none;
+        color: rgb(107, 63, 27);
+        width: max-content;
+    }
+    
+    .objednat_pruh_zarovnani a {
+        border-radius: 15px;
+        border: 2px solid black;
+        padding: 10px 20px;
+        background-color: rgba(161, 78, 22, 0.76);
+    }
+    
+    .objednat_pruh_zarovnani a:hover {
+        background-color: rgb(253, 201, 133);
+    }
+    /*---section3---*/
+    .seznam_jidla {
+        margin: 30px 2%;
+        background-color: white;
+        border-radius: 30px;
+        border: 8px solid rgb(230, 227, 227);
+        height: auto;
+
+    }
+    
+    .nase_dorty {
+        display: flex;
+        margin: 0% 0%;
+        text-align: center;
+        margin-bottom: 80px;
+        flex-wrap: wrap; 
+    }
+    
+    .vyber_jidlo1 ,.vyber_jidlo2 {
+        border: 2px solid black;
+        background-color: white;
+        border-radius: 30px;
+        width: 45%;
+        height: auto; 
+        font-size: 20px;
+        align-self: auto;
+        margin: 3% 1%;
+    }
+
+    .seznam_jidla h1 {
+        text-align: center;
+        font-size: 40px;
+        color: rgba(161, 78, 22, 0.76);
+        background-color: rgb(253, 201, 133);
+        border-radius: 20px;
+        border: 5px solid rgb(230, 227, 227);
+    }
+
+    .seznam_dort {
+        border-radius: 30px 30px 0 0;
+        width: 100%;
+        max-height: 3000px;
+        min-height: 10px;
+    }
+
+    .vyber_jidlo1 h2 ,.vyber_jidlo2 h2 {
+        padding-bottom: 20px;
+    }
+
+    .vyber_jidlo1:hover .seznam_dort, .vyber_jidlo2:hover .seznam_dort{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    
+
+
+     /*---pata---*/
+    
+    .pata { 
+        height: 250px;
+        border-bottom: 15px solid rgb(253, 201, 133);
+        border-top: 15px solid rgb(253, 201, 133);
+        background-color: rgb(235, 235, 235);
+        margin-top: 60px;
+    }
+    
+    .cukrarna_pata {
+        text-align: center;
+        margin: 30px;
+        
+    }
+    
+    .pata_h1 {
+        font-size: 40px;
+        color: rgb(107, 63, 27);
+    }
+    
+    .pata_p {
+        color: rgb(253, 201, 133);
+        font-size: 25px;
+    }
+}

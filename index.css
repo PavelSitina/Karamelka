@@ -1,0 +1,727 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content-wrap {
+    width: 1200;
+    margin: 0px auto;
+    padding: 0;    
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Courgette', cursive;
+    font-size: 16px;
+    background-color: rgba(161, 78, 22, 0.76);
+}
+/*---navigace---*/
+@media screen and (min-width: 1080px) {
+    .menu_pozadi {
+        border-top: 15px solid rgb(253, 201, 133);
+        border-bottom: 15px solid rgb(253, 201, 133);
+        background-color: white;
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    .menu {
+        display: flex;
+        float: right;
+        margin-top: 10px;
+        font-family: Chaparral Pro;
+    }
+
+    .menu ul li a {
+        display: inline-block;
+        padding: 10px;
+        color: black;
+        border: 2px solid rgb(230, 227, 227);
+        border-radius: 15px;
+        margin: 10px;
+        text-decoration: none;
+    }
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .menu ul li {
+        display: inline-block;
+    }
+
+    .menu a:hover {
+        background-color: rgb(230, 227, 227);
+    }
+
+    .logo {
+        margin-bottom: -2px;
+    }
+
+    /*---section1---*/
+    .pozadi1 {
+        background: url("obrazky/dort_pozadi1.jpg");
+        height: 60vh;
+        background-size: cover;
+    }
+
+    .pozadi1_ramecek {
+        width: 50vh;
+        height: 32vh;
+        border: 2px solid black;
+        border: none;
+        background-color: rgba(124, 67, 29, 0.87);
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        padding-bottom: 70px; 
+        border-radius: 20px; 
+        position: absolute;
+        top: 12em;
+        left: 7em;
+    }
+
+    .nadpis_poz1 {
+        font-size: 4vh;
+    }
+
+    .text_poz1 {
+        font-size: 2.6vh;
+    }
+
+    .nabitka_poz1 {
+        position: absolute;
+        border: 2px solid black;
+        background-color: rgb(253, 201, 133);
+        border: none;
+        color: black;
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 15px;
+        text-decoration: none;
+    }
+
+    .nabitka_poz1:hover {
+        background-color: rgb(247, 232, 213);
+        color: rgb(253, 201, 133);
+    }
+
+    /*---section2---*/
+    .section2 {
+        border-top: 15px solid rgb(253, 201, 133);
+        min-height:  100px;
+    }
+
+    .info_podnik {   
+        margin-left: 12%;
+        margin-right: 12%;
+        width: auto;   
+        background-color: white;
+        border-radius: 10px;
+        border: 8px solid rgb(230, 227, 227);
+    
+    }
+
+    .info_radek1, .info_radek2, .info_radek3 {
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        max-height: 100%;
+        min-height: 0em;
+        min-width: 790px;
+        min-height: 250px;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+
+    .info_radek2 {
+        border-top: 10px solid rgb(230, 227, 227);
+        border-bottom: 10px solid rgb(230, 227, 227);
+        flex-direction: row-reverse;
+    }
+
+
+    .o_nas, .nase_provozovna, .proc_mi { 
+        height: auto;
+        width: auto;
+    }
+
+    .detsky_koutek_img, .provozovna_img, .cukrar_img {
+        position: relative;
+        max-height: 30em;
+        min-height: 10em;
+        max-width: 40em;
+        width: auto;
+        min-width: 25em;
+        height: auto;
+    }
+
+    .o_nas, .proc_mi {
+        margin-left: 5%;
+    }
+
+    .proc_mi ul{
+        margin-left: 9%;
+        font-size: 20px;
+    }
+
+    .nase_provozovna {
+        margin-left: 8%
+    }
+
+    .info_h1 {
+        font-size: 40px;
+    }
+
+    .info_text {
+        font-size: 23px;
+    }
+    /*---reference---*/
+
+    .reference {
+        margin-top: 80px;
+    }
+
+
+
+    .reference_h1 {
+        background-color: rgb(253, 201, 133);
+        text-align: center;
+        font-size: 50px;
+        padding: 10px;
+        margin: 40px
+
+    }
+
+    .reference_mobil {
+        display: flex;
+    }
+
+    .reference_zarovnani {
+        margin-left: 7%;
+        margin-right: 7%;
+        width: auto;
+    }
+
+    .reference_novotny, .reference_novy, .reference_novak {
+        background-color: rgb(253, 201, 133);
+        border: 3px solid rgb(107, 63, 27);
+        border-radius: 30px;
+        width: 500px;
+        margin: 20px;
+        padding: 10px;
+        
+    }
+
+    .reference_h2 {
+        font-size: 30px;
+    }
+
+    .reference_p {
+        font-size: 20px;
+    }
+
+
+    /*---pata---*/
+
+    .pata {
+        height: 250px;
+        border-bottom: 15px solid rgb(253, 201, 133);
+        border-top: 15px solid rgb(253, 201, 133);
+        background-color: rgb(235, 235, 235);
+        margin-top: 60px;
+    }
+
+    .cukrarna_pata {
+        text-align: center;
+        margin: 30px;
+        
+    }
+
+    .pata_h1 {
+        font-size: 60px;
+        color: rgb(107, 63, 27);
+    }
+
+    .pata_p {
+        color: rgb(253, 201, 133);
+        font-size: 25px;
+    }
+}
+
+@media screen and ( max-width: 1080px) {
+    .menu_pozadi {
+        border-top: 15px solid rgb(253, 201, 133);
+        border-bottom: 15px solid rgb(253, 201, 133);
+        background-color: white;
+        padding-left: 1%;
+        padding-right: 1%;
+
+    }
+
+    .menu {
+        display: flex;
+        float: right;
+        margin-top: 10px;
+        font-family: Chaparral Pro;
+        font-size: 13px;
+    }
+
+    .menu ul li a {
+        display: inline-block;
+        padding: 10px;
+        color: black;
+        border: 2px solid rgb(230, 227, 227);
+        border-radius: 15px;
+        margin: 8px;
+        text-decoration: none;
+    }
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .menu ul li {
+        display: inline-block;
+    }
+
+    .menu a:hover {
+        background-color: rgb(230, 227, 227);
+    }
+
+    .logo {
+        margin-bottom: -2px;
+    }
+
+
+    /*---section1---*/
+    .pozadi1 {
+        background: url("obrazky/dort_pozadi1.jpg");
+        height: 60vh;
+        background-size: cover;
+        left: auto;
+    }
+
+    .pozadi1_ramecek {
+        max-width: 600px;
+        width: auto;
+        height: auto;
+        border: 2px solid black;
+        border: none;
+        background-color: rgba(124, 67, 29, 0.87);
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        padding-bottom: 70px; 
+        border-radius: 20px; 
+        position: absolute;
+        top: 12em;
+        left: 3%;
+        right: 3%;
+    }
+
+    .nadpis_poz1 {
+        font-size: 4vh;
+    }
+
+    .text_poz1 {
+        font-size: 2.6vh;
+    }
+
+    .nabitka_poz1 {
+        position: absolute;
+        border: 2px solid black;
+        background-color: rgb(253, 201, 133);
+        border: none;
+        color: black;
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 15px;
+        text-decoration: none;
+    }
+
+    .nabitka_poz1:hover {
+        background-color: rgb(247, 232, 213);
+        color: rgb(253, 201, 133);
+    }
+
+    /*---section2---*/
+    .section2 {
+        border-top: 15px solid rgb(253, 201, 133);
+        min-height:  100px;
+    }
+
+    .info_podnik {   
+        margin-left: 8%;
+        margin-right: 8%;
+        max-width: 810px;
+        width: auto;   
+        background-color: white;
+        border-radius: 10px;
+        border: 8px solid rgb(230, 227, 227);
+    
+    }
+
+    .info_radek1, .info_radek2, .info_radek3 {
+        text-align: center;
+        align-items: center;
+        max-width: 50em;
+        max-height: 80em;
+        min-width: 400px;
+        min-height: 250px;
+        width: auto;
+        box-sizing: border-box;
+    }
+
+    .info_radek2 {
+        border-top: 10px solid rgb(230, 227, 227);
+        border-bottom: 10px solid rgb(230, 227, 227);
+    }
+    
+
+    .o_nas, .nase_provozovna, .proc_mi { 
+        border-radius: 30px; 
+        margin-left: 3%;
+        margin-right: 3%;
+         
+    }
+
+    .detsky_koutek_img, .provozovna_img, .cukrar_img {
+        position: relative;
+        max-width: 95%;
+        min-height: 30%;
+        height: auto;
+        width: auto;
+    }
+
+    .proc_mi ul{
+        margin-left: 9%;
+        font-size: 20px;
+    }
+ 
+    .info_h1 {
+        font-size: 30px;
+    }
+
+    .info_text {
+        font-size: 20px;
+        width: auto;
+    }
+    /*---reference---*/
+
+    .reference {
+        margin-top: 80px;
+    }
+
+    .reference_h1 {
+        background-color: rgb(253, 201, 133);
+        text-align: center;
+        font-size: 50px;
+        padding: 10px;
+        margin: 40px
+    }
+
+
+
+    .reference_zarovnani {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: auto;
+    }
+
+    .reference_novotny, .reference_novy, .reference_novak {
+        background-color: rgb(253, 201, 133);
+        border: 3px solid rgb(107, 63, 27);
+        border-radius: 30px;
+        width: auto;
+        margin: 20px;
+        padding: 10px;
+        
+    }
+
+    .reference_h2 {
+        font-size: 30px;
+    }
+
+    .reference_p {
+        font-size: 20px;
+    }
+
+
+    /*---pata---*/
+
+    .pata {
+        height: 250px;
+        border-bottom: 15px solid rgb(253, 201, 133);
+        border-top: 15px solid rgb(253, 201, 133);
+        background-color: rgb(235, 235, 235);
+        margin-top: 60px;
+    }
+
+    .cukrarna_pata {
+        text-align: center;
+        margin: 30px;
+        
+    }
+
+    .pata_h1 {
+        font-size: 60px;
+        color: rgb(107, 63, 27);
+    }
+
+    .pata_p {
+        color: rgb(253, 201, 133);
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    .menu_pozadi {
+        border-top: 15px solid rgb(253, 201, 133);
+        border-bottom: 15px solid rgb(253, 201, 133);
+        background-color: white;
+        padding-left: 1%;
+        padding-right: 1%;
+
+    }
+
+    .menu {
+        display: flex;
+        float: right;
+        margin-top: 15px;
+        font-family: Chaparral Pro;
+        font-size: 15px;
+    }
+
+    .menu ul li a {
+        display: inline-block;
+        padding: 5px;
+        color: black;
+        border: 2px solid rgb(230, 227, 227);
+        border-radius: 15px;
+        margin: 3px;
+        text-decoration: none;
+    }
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .menu ul li {
+        display: inline-block;
+    }
+
+    .menu a:hover {
+        background-color: rgb(230, 227, 227);
+    }
+
+    .logo {
+        margin-bottom: -2px;
+    }
+
+    
+    /*---section1---*/
+    .pozadi1 {
+        background: url("obrazky/dort_pozadi1.jpg");
+        height: 60vh;
+        background-size: cover;
+    }
+    
+    .pozadi1_ramecek {
+        width: auto;
+        height: auto;
+        border: 2px solid black;
+        border: none;
+        background-color: rgba(124, 67, 29, 0.87);
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        padding-bottom: 70px; 
+        border-radius: 20px; 
+        position: absolute;
+        top: 12em;
+        left: 3%;
+        right: 3%;
+    }
+    
+    .nadpis_poz1 {
+        font-size: 4vh;
+    }
+    
+    .text_poz1 {
+        font-size: 2.6vh;
+    }
+    
+    .nabitka_poz1 {
+        position: absolute;
+        border: 2px solid black;
+        background-color: rgb(253, 201, 133);
+        border: none;
+        color: black;
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 15px;
+        text-decoration: none;
+    }
+    
+    .nabitka_poz1:hover {
+        background-color: rgb(247, 232, 213);
+        color: rgb(253, 201, 133);
+    }
+    
+    /*---section2---*/
+    .section2 {
+        border-top: 15px solid rgb(253, 201, 133);
+        min-height:  100px;
+    }
+    
+    .info_podnik {   
+        width: auto;   
+        background-color: white;
+        border-radius: 0px;
+        border: 8px solid rgb(230, 227, 227);
+        text-align: center;
+     
+    }
+    
+    .info_radek1, .info_radek2, .info_radek3 {
+        align-items: center;
+        max-width: 90em;
+        max-height: 60em;
+        min-height: 0em;
+        min-width: 10px;
+        min-height: 250px;
+        box-sizing: border-box;
+    }
+    
+    .info_radek2 {
+        border-top: 10px solid rgb(230, 227, 227);
+        border-bottom: 10px solid rgb(230, 227, 227);
+        height: auto;
+    }
+    
+    .o_nas, .nase_provozovna, .proc_mi { 
+        border-radius: 30px;  
+        text-decoration: none;
+    }
+    
+    .detsky_koutek_img, .provozovna_img, .cukrar_img {
+        position: relative;
+        max-width: 95%;
+        min-width: none;
+        height: auto;
+        width: auto;
+    }
+    
+
+    .o_nas, .proc_mi {
+        margin-left: 5%;
+    }
+    
+    .proc_mi ul{
+        margin-left: 9%;
+        font-size: 15px;
+    }
+    
+    .nase_provozovna {
+        margin-left: 8%
+    }
+    
+    .info_h1 {
+        font-size: 30px;
+    }
+    
+    .info_text {
+        font-size: 20px;
+    }
+
+
+    /*---reference---*/
+    
+    .reference {
+        margin-top: 80px;
+    }
+    
+    .reference_h1 {
+        background-color: rgb(253, 201, 133);
+        text-align: center;
+        font-size: 40px;
+        padding: 10px;
+        margin: 40px
+    
+    }
+    
+    .reference_zarovnani {
+        display: flex;
+        margin-left: 7%;
+        margin-right: 7%;
+        width: auto;
+    }
+    
+    .reference_novotny, .reference_novy, .reference_novak {
+        background-color: rgb(253, 201, 133);
+        border: 3px solid rgb(107, 63, 27);
+        border-radius: 30px;
+        width: auto;
+        margin: 20px;
+        padding: 10px;
+        
+    }
+    
+    .reference_h2 {
+        font-size: 30px;
+    }
+    
+    .reference_p {
+        font-size: 20px;
+    }
+    
+    
+    /*---pata---*/
+    
+    .pata {
+        height: 250px;
+        border-bottom: 15px solid rgb(253, 201, 133);
+        border-top: 15px solid rgb(253, 201, 133);
+        background-color: rgb(235, 235, 235);
+        margin-top: 60px;
+    }
+    
+    .cukrarna_pata {
+        text-align: center;
+        margin: 30px;
+        
+    }
+    
+    .pata_h1 {
+        font-size: 40px;
+        color: rgb(107, 63, 27);
+    }
+    
+    .pata_p {
+        color: rgb(253, 201, 133);
+        font-size: 25px;
+    }
+
+
+
+}
